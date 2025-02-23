@@ -1,6 +1,6 @@
 //AUTHOR :: Tanmay Dev Prasad
 //Date : 22 Feb 2025
-
+alert(`NOTE : This calculator currently only works for calculation of no more than two numbers, and please clear using AC everytime to perform new calculation`)
 let spanTxt = document.getElementById("spanner") //span area to insert input numbers and operators
 
 // var operators = ["√", "^", "!", "%", "÷", "×", "–", "+"]; //array of operators
@@ -19,7 +19,7 @@ let clearBtn = document.querySelector(".clearBtn")
 clearBtn.addEventListener("click", () => {
     spanTxt.innerHTML = ""; //clear the display
     numArr.splice(0, numArr.length)  //clear the digit array
-    numbersArray.splice(0, numArr.length) //clear the numbersArray 
+    numbersArray.splice(0, numbersArray.length) //clear the numbersArray 
 }
 )
 
@@ -101,7 +101,7 @@ eqlBtn.addEventListener("click", (num1, num2, opr) => {
     
     spanTxt.innerHTML = calc(numbersArray[0], numbersArray[1], operator) //display result
 
-    numbersArray.splice(0, numArr.length) //clear the numbersArray 
+    numbersArray.splice(0, numbersArray.length) //clear the numbersArray 
 
 }
 )
