@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,58 +15,64 @@
     color: light-dark(black, white);
 } */
 
-body{
+body {
     background-color: rgb(241, 255, 244);
 }
-.container{
+
+.container {
     height: 550px;
     width: 350px;
     border-radius: 15px;
-    background-color:rgba(1, 1, 17, 0.803);
+    background-color: rgba(1, 1, 17, 0.803);
     display: flex;
     margin: 5px auto;
     flex-direction: column;
     align-items: center;
 
 }
-    .display{
-        width: 100%;
-        height: 20%;
-        border-radius: 15px;
-        margin-bottom: 5px;
-        background-color: rgb(137, 131, 131);
-        box-shadow: inset 0px 0px 15px 10px rgba(15, 11, 33, 0.756);
-        display: flex;
-        align-items: center;
-        justify-content: end;
-    }
-        .status{
-            height: 50%;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            padding-right: 25px;
-            overflow: hidden;
-        }
-        .status span{
-            font-size: 1.65rem;
-            font-weight: bold;
-            color: white;
-            text-shadow: 0px 0px 20px #d6d6bb;
-            }
-    .controls{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        align-items: center;
-        justify-items: center;
-        /* border: 2px solid green; */
-        width: 90%;
-        margin: 0;
-        width: 100%;
-        height: 80%;
-    }
-.btn{
+
+.display {
+    width: 100%;
+    height: 20%;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    background-color: rgb(137, 131, 131);
+    box-shadow: inset 0px 0px 15px 10px rgba(15, 11, 33, 0.756);
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.status {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 25px;
+    overflow: hidden;
+}
+
+.status span {
+    font-size: 1.65rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0px 0px 20px #d6d6bb;
+}
+
+.controls {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-items: center;
+    /* border: 2px solid green; */
+    width: 90%;
+    margin: 0;
+    width: 100%;
+    height: 80%;
+}
+
+.backspace, .clearBtn{
     height: 60px;
     width: 60px;
     background-color: whitesmoke;
@@ -75,30 +81,82 @@ body{
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    
 }
-.num{
+
+.backspace:active{
+    box-shadow: 0px 0px 5px 2px rgb(12, 125, 223);
+}
+.clearBtn:active{
+    box-shadow: 0px 0px 5px 2px rgb(10, 230, 120);
+}
+
+.num {
     background-color: rgb(216, 112, 74);
     font-weight: 600;
+    
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
-#dblBtn{
+
+.num:active{
+    box-shadow: 0px 0px 5px 2px rgb(242, 222, 253);
+}
+
+#dblBtn {
     grid-row: 4/6;
     grid-column: 4/5;
     height: 90%;
     border-radius: 10px;
     align-self: center;
 }
-.opr{
+
+/* equal-to button */
+.opr {
     font-size: 1.7rem;
+    
+    height: 60px;
+    width: 60px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
-.clearBtn{
+.opr:active{
+    box-shadow: 0px 0px 5px 2px rgb(255, 32, 7);
+}
+.eqlBtn {
+    font-size: 1.7rem;
+    
+    height: 60px;
+    width: 60px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.eqlBtn:active{
+    box-shadow: 0px 0px 5px 2px rgb(255, 32, 7);
+}
+
+.clearBtn {
     background-color: rgb(62, 254, 161);
     font-weight: bold;
 }
-.backspace{
+
+.backspace {
     background-color: rgb(164, 179, 255);
 }
-img{
+
+img {
     filter: invert(1);
     scale: 0.95;
     margin-left: -2px;
